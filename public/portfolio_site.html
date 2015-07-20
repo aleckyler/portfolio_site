@@ -61,7 +61,6 @@
         margin: 0px auto;
         margin-top: 5em;
         clear: both;
-        padding-top: 5em;
       }
 
       .headshot {
@@ -89,6 +88,11 @@
         margin: 0px auto;
         margin-top: 5em;
       }
+      #my_projects_for_nav{
+        display: none;
+        position: relative;
+        top: -3em;
+      }
     </style>
   </head>
   <body>
@@ -96,7 +100,7 @@
   <img class="palm_tree" src="http://gallery.yopriceville.com/downloadfullsize/send/5044" alt="Palm tree" />
     <div class="navigation_bar">
       <ul class="nav_list">
-        <li class="nav_link"><a href="#my_projects">My Projects</a></li>
+        <li class="nav_link"><a href="#my_projects_for_nav">My Projects</a></li>
         <li class="nav_link"><a href="#about_me">About Me</a></li>
         <li class="nav_link"><a href="#contact_me">Contact Me</a></li>
       </ul>
@@ -107,7 +111,8 @@
     </div>
     <div class="line-break">
     </div>
-    <div id="my_projects" class="my_projects">
+    <div class="my_projects">
+      <div id="my_projects_for_nav"></div>
       Here are my notable projects:
       <ul>
         <li>Here's a link to my first <a href="https://github.com/aleckyler/repl_game_folder">REPL game</a>. I made a version of the classic game, Hangman.</li>
