@@ -6,79 +6,112 @@
     <style type="text/css">
     body {
       background: darkgray;
-    }
-    .jhu_logo{
-      position: fixed;
-      left:3em;
-    }
-    .palm_tree{
-      position:fixed;
-      right:3em;
-      height:23em
-    }
-    .navigation_bar {
-      background: black;
-      position: fixed;
-      top: 0em;
-      width: 98.8%;
-      z-index: 1;
-    }
-    .nav_list {
-      text-align: center;
-    }
-    .nav_link {
-      color: gray;
-      display: inline-block;
-      margin: 0.01em 5em;
-    }
-    .main_header {
-      margin-top: 4.5em;
-      text-align: center;
-    }
-    .my_projects {
-      width: 27em;
-      margin: 0px auto;
-    }
-    .about_header {
-      margin-top: 0.5em;
-      margin-bottom:2em;
-      text-align:center;
-    }
-    .about_me {
-      width: 27em;
-      background: orange;
-      border: 1px solid black;
-      margin: 0px auto;
-      margin-top: 5em;
-      clear: both;
-      overflow: auto;
-      padding-right: 1em;
-      padding-left: 1em;
-    }
-    .headshot {
-      float: left;
-      position: relative;
-      /* left: 0.5em; */
-      width: 12em;
-      /* padding:0.5em; */
-      margin-right:1em;
-      margin-top:0.1em;
-    }
-    .bio {
-      /* width: 13em; */
-      clear: left;
-      /* float: right; */
-      position: relative;
-      bottom: 0.5em;
-    }
-    .contact_header{
-      text-align: center
-    }
-    .contact_me {
-      width: 27em;
-      margin: 0px auto;
-      margin-top: 5em;
-    }
+      }
+
+      .jhu_logo{
+        position: fixed;
+        left:3em;
+        z-index:-1;
+      }
+
+      .palm_tree{
+        position:fixed;
+        right:3em;
+        height:23em;
+        z-index:-1;
+      }
+
+      .navigation_bar {
+        background: black;
+        position: fixed;
+        top: 0em;
+        width: 98.8%;
+        z-index: 1;
+      }
+
+      .nav_list {
+        text-align: center;
+      }
+
+      .nav_link {
+        color: gray;
+        display: inline-block;
+        margin: 0.01em 5em;
+      }
+
+      .main_header {
+        margin-top: 4.5em;
+        text-align: center;
+      }
+
+      .my_projects {
+        width: 27em;
+        margin: 0px auto;
+      }
+
+      .about_header {
+        margin-top: 0.5em;
+        margin-bottom:2em;
+        text-align:center;
+      }
+
+      .about_me {
+
+        width: 27em;
+        background: orange;
+        border: 1px solid black;
+        margin: 0px auto;
+        margin-top: 5em;
+        clear: both;
+        overflow: auto;
+        padding-right: 1em;
+        padding-left: 1em;
+      }
+
+      .headshot {
+        float: left;
+        position: relative;
+        /* left: 0.5em; */
+        width: 12em;
+        /* padding:0.5em; */
+        margin-right:1em;
+        margin-top:0.1em;
+      }
+
+      .bio {
+        /* width: 13em; */
+        clear: left;
+        /* float: right; */
+        position: relative;
+        bottom: 0.5em;
+      }
+      .contact_header{
+        text-align: center;
+      }
+
+      .contact_me {
+        width: 27em;
+        margin: 0px auto;
+        margin-top: 5em;
+      }
+      #my_projects_for_nav{
+        visibility: hidden;
+        float: left;
+        position: relative;
+        top: -3em;
+      }
+      #about_me_for_nav{
+        visibility: hidden;
+        float: left;
+        position: relative;
+        top: -3em;
+      }
+      #contact_me_for_nav{
+        visibility: hidden;
+        float: left;
+        position: relative;
+        top: -3em;
+      }
     </style>
   </head>
   <body>
@@ -107,11 +140,12 @@
       These and the rest of my projects can be found on my <a href="https://github.com/aleckyler">GitHub</a>!
     </div>
     <div class="about_me">
+      <div id="about_me_for_nav"></div>
       <h3 class="about_header">About Me</h4>
-      <p class="bio">
-        <img class="headshot" src="https://s3.amazonaws.com/uploads.hipchat.com/108061/1731890/FnNbjx6BEWHvWE9/Alec%20Greenberg%205174__thumb.jpg" alt="Alec Greenberg" />
-        My name is Alec Greenberg. I live in Boca Raton, Florida. I just graduated from Johns Hopkins University with a B.S. in Chemical and Biomolecular Engineering and a minor in Entrepreneurship and Management. I am currently attending the Wyncode coding bootcamp in Fort Lauderdale and focusing on Ruby, Rails, Javascript, HTML, and CSS. I am now looking for to start a career at the intersection of engineering, computer programming, consulting and business.
-      </p>
+        <p class="bio">
+          <img class="headshot" src="https://s3.amazonaws.com/uploads.hipchat.com/108061/1731890/FnNbjx6BEWHvWE9/Alec%20Greenberg%205174__thumb.jpg" alt="Alec Greenberg" />
+          My name is Alec Greenberg. I live in Boca Raton, Florida. I just graduated from Johns Hopkins University with a B.S. in Chemical and Biomolecular Engineering and a minor in Entrepreneurship and Management. I am currently attending the Wyncode coding bootcamp in Fort Lauderdale and focusing on Ruby, Rails, Javascript, HTML, and CSS. I am now looking for to start a career at the intersection of engineering, computer programming, consulting and business.
+        </p>
     </div>
     <div class="contact_me">
       <div id="contact_me_for_nav"></div>
