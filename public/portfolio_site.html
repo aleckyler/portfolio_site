@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>My Portfolio Site</title>
     <style type="text/css">
-    body {
-      background: darkgray;
+      body {
+        background: darkgray;
       }
 
       .jhu_logo{
@@ -43,39 +43,53 @@
         margin-top: 4.5em;
         text-align: center;
       }
-
+      .name_main_header{
+        font-style:italic;
+        font-weight:bold;
+        font-size:3em;
+      }
+      .sub_main_header{
+        margin-bottom:2em;
+      }
+      .projects_header{
+        margin-top: -0.5em;
+        margin-bottom:1em;
+        text-align:center;
+      }
       .my_projects {
-        width: 27em;
+        width: 24em;
         margin: 0px auto;
+        background: orange;
+        border: 1px solid black;
+        padding: 1.5em
       }
 
       .about_header {
         margin-top: 0.5em;
-        margin-bottom:2em;
+        margin-bottom:0em;
         text-align:center;
       }
 
       .about_me {
-
-        width: 27em;
+        width: 25em;
         background: orange;
         border: 1px solid black;
         margin: 0px auto;
         margin-top: 5em;
         clear: both;
         overflow: auto;
-        padding-right: 1em;
-        padding-left: 1em;
+        padding:1em;
       }
 
       .headshot {
         float: left;
         position: relative;
         /* left: 0.5em; */
-        width: 12em;
+        width: 12.8em;
         /* padding:0.5em; */
         margin-right:1em;
         margin-top:0.1em;
+        margin-bottom:0.4em;
       }
 
       .bio {
@@ -83,7 +97,7 @@
         clear: left;
         /* float: right; */
         position: relative;
-        bottom: 0.5em;
+        bottom: -1em;
       }
       .contact_header{
         text-align: center;
@@ -98,7 +112,7 @@
         visibility: hidden;
         float: left;
         position: relative;
-        top: -3em;
+        top: -4em;
       }
       #about_me_for_nav{
         visibility: hidden;
@@ -125,8 +139,8 @@
       </ul>
     </div>
     <div class="main_header">
-      <h1>Alec Greenberg</h1>
-      <h2>Portfolio Site</h2>
+      <h1 class="name_main_header">Alec Greenberg</h1>
+      <h2 class="sub_main_header">Portfolio Site</h2>
     </div>
     <div class="line-break">
     </div>
